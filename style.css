@@ -31,6 +31,7 @@ header {
   align-items: center;
   font-size: 21px;
   margin-right: 42px;
+
   /* Primary/B300 */
 
   color: #7F8CFF;
@@ -43,7 +44,6 @@ header {
   flex-direction: column;
   padding-top: 81px;
   align-items: start;
-
   background: url(assets/header-shape-mobile.svg);
   background-repeat: no-repeat;
 }
@@ -54,6 +54,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+
   /* identical to box height, or 111% */
 
   display: flex;
@@ -71,6 +72,7 @@ header {
 }
 
 .column h1 {
+
   /* Header / 2 */
 
   font-family: 'Poppins';
@@ -79,6 +81,7 @@ header {
   font-size: 40px;
   line-height: 52px;
   margin-bottom: 9px;
+
   /* or 130% */
 
   display: flex;
@@ -90,6 +93,7 @@ header {
 }
 
 .column p {
+
   /* Body / 2 */
 
   font-family: 'Poppins';
@@ -97,6 +101,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   /* or 150% */
 
 
@@ -106,6 +111,7 @@ header {
 }
 
 #social-media-icons p {
+
   /* Body / 2 - Bolder */
 
   font-family: 'Poppins';
@@ -113,6 +119,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+
   /* identical to box height, or 150% */
 
 
@@ -124,6 +131,8 @@ header {
 #social-media-icons i {
   font-size: 27px;
   padding-right: 15px;
+
   /* Neutrals/N400 */
+
   color: #505F79;
 }
