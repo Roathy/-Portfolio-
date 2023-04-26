@@ -22,10 +22,6 @@ header {
   font-size: 21px;
 }
 
-#logo {
-  margin-left: 21px;
-}
-
 #menu {
   display: flex;
   align-items: center;
@@ -34,7 +30,7 @@ header {
 
   /* Primary/B300 */
 
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .column {
@@ -54,6 +50,7 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  margin-left: 21px;
 
   /* identical to box height, or 111% */
 
@@ -63,7 +60,7 @@ header {
 
   /* Primary/B400 */
 
-  color: #6070FF;
+  color: #6070ff;
 }
 
 #img-container {
@@ -72,10 +69,9 @@ header {
 }
 
 .column h1 {
-
   /* Header / 2 */
 
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -89,14 +85,13 @@ header {
 
   /* Neutrals/N800 */
 
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .column p {
-
   /* Body / 2 */
 
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -104,17 +99,15 @@ header {
 
   /* or 150% */
 
-
   /* Neutrals/N600 */
 
   color: #344563;
 }
 
 #social-media-icons p {
-
   /* Body / 2 - Bolder */
 
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -122,10 +115,9 @@ header {
 
   /* identical to box height, or 150% */
 
-
   /* Primary/B300 */
 
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 #social-media-icons i {
@@ -134,5 +126,5 @@ header {
 
   /* Neutrals/N400 */
 
-  color: #505F79;
+  color: #505f79;
 }
