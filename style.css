@@ -39,6 +39,8 @@ header {
   display: flex;
   flex-direction: column;
   padding-top: 81px;
+  padding-left: 9px;
+  padding-right: 9px;
   align-items: start;
   background: url(assets/header-shape-mobile.svg);
   background-repeat: no-repeat;
@@ -61,6 +63,10 @@ header {
   /* Primary/B400 */
 
   color: #6070ff;
+}
+
+#logo a {
+  text-decoration: none;
 }
 
 #img-container {
@@ -102,6 +108,10 @@ header {
   /* Neutrals/N600 */
 
   color: #344563;
+}
+
+#social-media-icons ul {
+  padding-left: 0px;
 }
 
 #social-media-icons p {
