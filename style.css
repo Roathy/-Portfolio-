@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
 header {
   width: 375px;
   display: flex;
@@ -12,6 +20,7 @@ header {
   justify-content: space-between;
   padding: 0 27px;
   font-family: 'Roboto', sans-serif;
+  visibility: hidden;
 }
 
 #toolbar {
@@ -36,10 +45,12 @@ header {
 .column {
   width: 375px;
   height: 718px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  padding-top: 81px;
-  padding-left: 9px;
+  padding-top: 66px;
+  padding-left: 21px;
   padding-right: 9px;
   align-items: start;
   background: url(assets/header-shape-mobile.svg);
@@ -102,6 +113,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 0;
 
   /* or 150% */
 
@@ -111,6 +123,8 @@ header {
 }
 
 #social-media-icons ul {
+  display: flex;
+  list-style-type: none;
   padding-left: 0;
 }
 
@@ -130,9 +144,12 @@ header {
   color: #7f8cff;
 }
 
-#social-media-icons i {
-  font-size: 27px;
+#social-media-icons li {
   padding-right: 15px;
+}
+
+#social-media-icons i {
+  font-size: 24px;
 
   /* Neutrals/N400 */
 
