@@ -386,6 +386,18 @@ header {
   background: none;
 }
 
+#list-of-skills {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#list-of-languages {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 12px;
+}
+
 #about-me #social-media-icons ul li {
   padding-right: 21px;
 }
