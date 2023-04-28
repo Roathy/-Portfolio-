@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+#statusbar {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 27px;
+  font-family: 'Roboto', sans-serif;
+  visibility: hidden;
+}
+
+#toolbar {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 21px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  margin-right: 24px;
+
+  /* Primary/B300 */
+
+  color: #7f8cff;
+}
+
+.column {
+  width: 375px;
+  height: 718px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 66px;
+  padding-left: 21px;
+  padding-right: 9px;
+  align-items: start;
+  background: url(assets/header-shape-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+#logo {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin-left: 21px;
+
+  /* identical to box height, or 111% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Primary/B400 */
+
+  color: #6070ff;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+#img-container {
+  background: url(assets/header-shape-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.column h1 {
+  /* Header / 2 */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 9px;
+
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+}
+
+.column p {
+  /* Body / 2 */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+
+  /* or 150% */
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+}
+
+#social-media-icons ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#social-media-icons p {
+  /* Body / 2 - Bolder */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* identical to box height, or 150% */
+
+  /* Primary/B300 */
+
+  color: #7f8cff;
+}
+
+#social-media-icons li {
+  padding-right: 18px;
+}
+
+#social-media-icons i {
+  font-size: 24px;
+
+  /* Neutrals/N400 */
+
+  color: #505f79;
+}
