@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+header {
+  margin: 0 auto;
+}
+
 body {
   margin: 0 auto;
 }
@@ -35,7 +39,7 @@ header {
   display: flex;
   align-items: center;
   font-size: 21px;
-  margin-right: 42px;
+  margin-right: 24px;
 
   /* Primary/B300 */
 
@@ -145,7 +149,7 @@ header {
 }
 
 #social-media-icons li {
-  padding-right: 15px;
+  padding-right: 18px;
 }
 
 #social-media-icons i {
