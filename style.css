@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -80,10 +81,6 @@ body {
   color: #6070ff;
 }
 
-#logo a {
-  text-decoration: none;
-}
-
 #img-container {
   background: url(assets/header-shape-mobile.svg);
   background-repeat: no-repeat;
@@ -144,12 +141,13 @@ body {
   color: #6070ff;
 }
 
-.normal-button p {
+.normal-button {
   height: 24px;
 
   /* Button /Normal */
 
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -165,6 +163,35 @@ body {
   /* Primary/B500 */
 
   color: #396df2;
+
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 132px;
+  height: 48px;
+
+  /* Primary/B400 */
+
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.normal-button:hover {
+  background: #6070FF;
+  color: #FFFFFF;
+}
+
+.normal-button:active {
+  background: #2230D2;
+  color: #FFFFFF;
+}
+
+#about-me .normal-button {
+  width: 165px;
+  margin-top: 0;
 }
 
 .skill-header p {
@@ -385,30 +412,6 @@ body {
 
   background: #ebebff;
   border-radius: 8px;
-}
-
-.normal-button {
-  /* Auto layout */
-
-  margin-top: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 132px;
-  height: 48px;
-
-  /* Primary/B400 */
-
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-}
-
-#about-me .normal-button {
-  width: 165px;
-  padding-top: 24px;
-  margin-top: 0;
 }
 
 #about-me .column {
