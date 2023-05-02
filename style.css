@@ -390,6 +390,7 @@ body {
 #contact-form {
   width: 375px;
   height: 779px;
+  margin: 0 auto;
   background-color: #6070FF;
   border-top-left-radius: 81px;
 }
