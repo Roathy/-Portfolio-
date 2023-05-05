@@ -200,6 +200,11 @@ body {
 #social-media-icons i {
   font-size: 24px;
   color: #505f79;
+  transition: all 0.5s ease-in-out;
+}
+
+#social-media-icons i:hover {
+  font-size: 30px;
 }
 
 #cards-container {
