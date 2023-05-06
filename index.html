@@ -37,14 +37,12 @@
 
     <section id="main-section">
         <div class="column">
-            <span>
-                <div id="img-container"></div>
-            </span>
+            <div id="img-container"></div>
             <h1>I'm Alexandra. Glad to see <br>you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
                 work and<br> experience! If you like what you see and have a project you need coded, don’t hesitate to
                 contact me.</p>
-            <div id="social-media-icons">
+            <div class="social-media-icons">
                 <p>LET'S CONNECT</p>
                 <ul>
                     <li> <a href="#">
@@ -62,18 +60,18 @@
         <div id="cards-container">
             <div class="card">
                 <div id="card-img"></div>
-                <h2 id="card-title">Tonic</h2>
-                <div id="card-info" class="row-container">
+                <h2 class="card-title">Tonic</h2>
+                <div class="card-info row-container">
                     <h3>CANOPY</h3>
                     <i class="fa-solid fa-circle"></i>
                     <p>Back End Dev</p>
                     <i class="fa-solid fa-circle"></i>
                     <p>2015</p>
                 </div>
-                <p id="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
+                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
                     required.</p>
-                <div id="card-tech">
-                    <ul id="list-categories" class="row-container">
+                <div class="card-tech">
+                    <ul  class="list-categories row-container">
                         <li>
                             <div class="box-background">
                                 <p>HTML</p>
@@ -95,18 +93,18 @@
             </div>
             <div class="card">
                 <div id="card-img-1"></div>
-                <h2 id="card-title">Multi-Post Stories</h2>
-                <div id="card-info" class="row-container">
+                <h2 class="card-title">Multi-Post Stories</h2>
+                <div class="card-info row-container">
                     <h3>CANOPY</h3>
                     <i class="fa-solid fa-circle"></i>
                     <p>Back End Dev</p>
                     <i class="fa-solid fa-circle"></i>
                     <p>2015</p>
                 </div>
-                <p id="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
+                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
                     required.</p>
-                <div id="card-tech">
-                    <ul id="list-categories" class="row-container">
+                <div class="card-tech">
+                    <ul  class="list-categories row-container">
                         <li>
                             <div class="box-background">
                                 <p>HTML</p>
@@ -128,18 +126,18 @@
             </div>
             <div class="card">
                 <div id="card-img-2"></div>
-                <h2 id="card-title">Tonic</h2>
-                <div id="card-info" class="row-container">
+                <h2 class="card-title">Tonic</h2>
+                <div class="card-info row-container">
                     <h3>CANOPY</h3>
                     <i class="fa-solid fa-circle"></i>
                     <p>Back End Dev</p>
                     <i class="fa-solid fa-circle"></i>
                     <p>2015</p>
                 </div>
-                <p id="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
+                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
                     required.</p>
-                <div id="card-tech">
-                    <ul id="list-categories" class="row-container">
+                <div class="card-tech">
+                    <ul  class="list-categories row-container">
                         <li>
                             <div class="box-background">
                                 <p>HTML</p>
@@ -161,18 +159,18 @@
             </div>
             <div class="card">
                 <div id="card-img-3"></div>
-                <h2 id="card-title">Multi-Post Stories</h2>
-                <div id="card-info" class="row-container">
+                <h2 class="card-title">Multi-Post Stories</h2>
+                <div class="card-info row-container">
                     <h3>CANOPY</h3>
                     <i class="fa-solid fa-circle"></i>
                     <p>Back End Dev</p>
                     <i class="fa-solid fa-circle"></i>
                     <p>2015</p>
                 </div>
-                <p id="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
+                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups
                     required.</p>
-                <div id="card-tech">
-                    <ul id="list-categories" class="row-container">
+                <div class="card-tech">
+                    <ul  class="list-categories row-container">
                         <li>
                             <div class="box-background">
                                 <p>HTML</p>
@@ -200,7 +198,7 @@
             <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of
                 my work and experience! If you like what you see and have a project you need coded, don’t hesitate to
                 contact me.</p>
-            <div id="social-media-icons">
+            <div class="social-media-icons">
                 <p>LET'S CONNECT</p>
                 <ul>
                     <li> <a href="#"><i class="fa-brands fa-github"></i></a></li>
@@ -271,13 +269,16 @@
             <form action="https://formspree.io/f/xyyaojgk" method="post">
                 <ul>
                     <li>
-                        <input type="text" class="form-input" name="name" id="name" placeholder="Full Name" maxlength="30" required />
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Full Name"
+                            maxlength="30" required />
                     </li>
                     <li>
-                        <input type="email" class="form-input" name="email" id="email" placeholder="Email address" required />
+                        <input type="email" class="form-input" name="email" id="email" placeholder="Email address"
+                            required />
                     </li>
                     <li>
-                        <textarea placeholder="Hey, I'd like to connect to..." maxlength="500" name="message" rows="10" cols="30" required></textarea>
+                        <textarea placeholder="Hey, I'd like to connect to..." maxlength="500" name="message" rows="10"
+                            cols="30" required></textarea>
                     </li>
                     <li>
                         <input type="submit" class="contact-btn" value="Get in touch" />
