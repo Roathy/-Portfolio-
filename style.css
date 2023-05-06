@@ -130,7 +130,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    background: #f7f7f9 !important; 
+    background: #f7f7f9 !important;
   }
 
   .show-desktop {
@@ -518,32 +518,6 @@ body {
   height: 399px;
 }
 
-@media only screen and (min-width: 768px) {
-  #about-me {
-    background-color: white;
-    margin-right: 0;
-  }
-
-  #about-me .column {
-    width: 50%;
-    height: 668px;
-    margin: 0;
-    background-color: white;
-  }
-
-  #skills-list {
-    width: 50%;
-    background-color: white;
-  }
-
-  #skills-list .column {
-    width: 50%;
-    height: 668px;
-    margin: 0;
-    background-color: white;
-  }
-}
-
 #skill-list .column {
   background: none;
 }
@@ -607,6 +581,43 @@ body {
 
 #skill-icon-3 {
   background: url(assets/Ellipse-3.png);
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-container {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+  }
+
+  #languages {
+    height: 216px;
+  }
+
+  #list-of-languages {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #list-of-languages .skill-box {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    align-items: start;
+    width: 122px;
+  }
+  #list-of-languages .skill-box .skill-icon {
+    margin-bottom: 6px;
+  }
+
+  .flex-container #about-me {
+    height: 600px;
+  }
+
+  .flex-container #skill-list {
+    height: 600px;
+  }
 }
 
 #contact-section::before {
