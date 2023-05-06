@@ -19,6 +19,11 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  background: #f7f7f9;
+  position: relative;
+}
+
 #statusbar {
   height: 45px;
   display: flex;
@@ -221,31 +226,19 @@ body {
 }
 
 #card-img {
-  background: url(assets/Snapshoot-Portfolio.png);
-  width: 295px;
-  height: 220px;
-  margin-bottom: 12px;
+  content: url(assets/Snapshoot-Portfolio.png);
 }
 
 #card-img-1 {
-  background: url(assets/Snapshoot-Portfolio-1.png);
-  width: 295px;
-  height: 220px;
-  margin-bottom: 12px;
+  content: url(assets/Snapshoot-Portfolio-1.png);
 }
 
 #card-img-2 {
-  background: url(assets/Snapshoot-Portfolio-2.png);
-  width: 295px;
-  height: 220px;
-  margin-bottom: 12px;
+  content: url(assets/Snapshoot-Portfolio-2.png);
 }
 
 #card-img-3 {
-  background: url(assets/Snapshoot-Portfolio-3.png);
-  width: 295px;
-  height: 220px;
-  margin-bottom: 12px;
+  content: url(assets/Snapshoot-Portfolio-3.png);
 }
 
 .card-title {
