@@ -31,19 +31,34 @@
             <div id="toolbar">
                 <div id="logo"><a href="#">My logo</a></div>
                 <nav>
-                    <div id="menu"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+                    <div id="menu" class="show-mobile"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+                    <div class="show-desktop">
+                        <ul>
+                            <li>Portfolio</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
 
         <section id="main-section">
             <div class="column">
-                <div id="img-container"></div>
-                <h1>I'm Alexandra. Glad to see <br>you!</h1>
-                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
-                    work and<br> experience! If you like what you see and have a project you need coded, don’t hesitate
-                    to
-                    contact me.</p>
+                <div class="show-mobile">
+                    <h1>I'm Alexandra. Glad to see <br>you!</h1>
+                </div>
+                <div class="show-desktop">
+                    <h1>I'm Alexandra.<br> Glad to see you!</h1>
+                </div>
+                <div>
+                    <p>I’m a software developer! I can help you build a product , feature or website Look through some
+                        of my
+                        work and<br class="show-mobile"> experience! If you like what you see and have a project you need coded, don’t
+                        hesitate
+                        to
+                        contact me.</p>
+                </div>
                 <div class="social-media-icons">
                     <p>LET'S CONNECT</p>
                     <ul>
@@ -58,6 +73,7 @@
                 </div>
             </div>
         </section>
+
         <section>
             <div id="cards-container">
                 <div class="card">
