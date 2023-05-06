@@ -191,6 +191,7 @@ body {
 
   #cards-container .card {
     width: 87vw;
+    height: 450px;
     margin-right: 9.8%;
     margin-left: 12%;
     display: flex;
@@ -362,7 +363,7 @@ body {
 }
 
 .card {
-  margin-bottom: 88px;
+  margin-bottom: 0;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -418,7 +419,6 @@ body {
   .card {
     height: 50%;
     column-gap: 12px;
-    margin-bottom: 0;
   }
 
   .card-content>* {
