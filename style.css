@@ -180,24 +180,24 @@ body {
   line-height: 20px;
 }
 
-#social-media-icons ul {
+.social-media-icons ul {
   display: flex;
   list-style-type: none;
   padding-left: 0;
 }
 
-#social-media-icons p {
+.social-media-icons p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
 }
 
-#social-media-icons li {
+.social-media-icons li {
   padding-right: 18px;
 }
 
-#social-media-icons i {
+.social-media-icons i {
   font-size: 24px;
   color: #505f79;
 }
@@ -248,7 +248,7 @@ body {
   margin-bottom: 12px;
 }
 
-#card-title {
+.card-title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 700;
@@ -257,14 +257,14 @@ body {
   color: #172b4d;
 }
 
-#card-info {
+.card-info {
   margin-top: 0;
   margin-bottom: 0;
   align-items: center;
   justify-content: start;
 }
 
-#card-info h3 {
+.card-info h3 {
   margin-right: 12px;
   font-weight: 600;
   font-size: 13px;
@@ -272,7 +272,7 @@ body {
   color: #344563;
 }
 
-#card-info p {
+.card-info p {
   margin-right: 12px;
   font-weight: 600;
   font-size: 13px;
@@ -280,13 +280,13 @@ body {
   color: #7a869a;
 }
 
-#card-info i {
+.card-info i {
   margin-right: 12px;
   font-size: 6px;
   color: #c1c7d0;
 }
 
-#card-description {
+.card-description {
   margin-top: 0;
   font-weight: 400;
   font-size: 15px;
@@ -294,7 +294,7 @@ body {
   color: #344563;
 }
 
-#list-categories {
+.list-categories {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -337,7 +337,7 @@ body {
   padding-left: 12px;
 }
 
-#about-me #social-media-icons ul li {
+#about-me .social-media-icons ul li {
   padding-right: 21px;
 }
 
