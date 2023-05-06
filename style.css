@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  background: #f7f7f9;
+  background-color: white;
   position: relative;
 }
 
@@ -73,6 +73,11 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .column {
@@ -124,6 +129,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    background: #f7f7f9 !important; 
+  }
+
   .show-desktop {
     display: block;
   }
@@ -363,7 +372,7 @@ body {
 }
 
 .card {
-  margin-bottom: 0;
+  margin-bottom: 60px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -507,6 +516,32 @@ body {
 #about-me .column {
   background: none;
   height: 399px;
+}
+
+@media only screen and (min-width: 768px) {
+  #about-me {
+    background-color: white;
+    margin-right: 0;
+  }
+
+  #about-me .column {
+    width: 50%;
+    height: 668px;
+    margin: 0;
+    background-color: white;
+  }
+
+  #skills-list {
+    width: 50%;
+    background-color: white;
+  }
+
+  #skills-list .column {
+    width: 50%;
+    height: 668px;
+    margin: 0;
+    background-color: white;
+  }
 }
 
 #skill-list .column {
