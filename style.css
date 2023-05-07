@@ -108,7 +108,7 @@ body {
   }
 
   header {
-    width: 100vw;
+    width: 100%;
     padding-right: 12.9%;
     padding-left: 9%;
     margin: 0;
@@ -152,18 +152,19 @@ body {
     padding-right: 0;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 540px;
     z-index: -1;
   }
 
-  #main-section .column > * {
+  #main-section .column>* {
     margin-left: 1rem;
   }
 
   #main-section .column h1 {
     margin-top: 105px;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -184,7 +185,7 @@ body {
   }
 
   header {
-    width: 100vw;
+    width: 100%;
     padding-right: 12.9%;
     padding-left: 9%;
     margin: 0;
@@ -211,7 +212,7 @@ body {
   }
 
   #main-section .column {
-    width: 100vw;
+    width: 100%;
     height: 540px;
     background-color: #fff;
     background-image: url(assets/Header-bg.svg);
@@ -226,7 +227,7 @@ body {
     z-index: -1;
   }
 
-  #main-section .column > * {
+  #main-section .column>* {
     margin-right: 18%;
     margin-left: 18%;
   }
@@ -236,7 +237,7 @@ body {
   }
 
   #cards-container .card {
-    width: 87vw;
+    width: 87%;
     height: 450px;
     margin-right: 9.8%;
     margin-left: 12%;
@@ -419,6 +420,7 @@ body {
     width: 50%;
     padding: 1rem;
   }
+
 }
 
 .card {
@@ -530,7 +532,7 @@ body {
     column-gap: 12px;
   }
 
-  .card-content > * {
+  .card-content>* {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -723,17 +725,17 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
-  #about-me .column {
-    width: 39vw;
-    padding-left: 120px;
+  #about-me {
+    width: 50%;
   }
 
   #skill-list .column {
-    width: 61vw;
+    width: 61%;
+    margin-left: 0;
   }
 
   #languages {
-    width: 42vw;
+    width: 42%;
   }
 
   #languages .skill-header {
@@ -747,6 +749,10 @@ body {
 
   #cards-container .card {
     margin-left: 15%;
+  }
+
+  .flex-container {
+    padding-left: 0;
   }
 }
 
@@ -770,7 +776,7 @@ body {
 #contact-section {
   position: relative;
   z-index: 9;
-  width: 100vw;
+  width: 100%;
   height: 779px;
   margin: 0 auto;
   background-color: #6070ff;
@@ -882,13 +888,13 @@ body {
   }
 
   #contact-section {
-    width: 100vw;
+    width: 100%;
     background-color: white;
     border-radius: 0;
   }
 
   #contact-section .column {
-    width: 60vw;
+    width: 60%;
     margin-left: 21%;
   }
 
