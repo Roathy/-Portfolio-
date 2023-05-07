@@ -6,7 +6,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -56,12 +55,6 @@
 - **[Use of linters]**
 - **[Github & Git]**
 - **[README.md file]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [No Live Demo Required](https://google.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
