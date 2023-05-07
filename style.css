@@ -95,14 +95,53 @@ body {
 }
 
 @media only screen and (min-width: 376px) {
+  .show-desktop {
+    display: block;
+  }
+
+  .show-mobile {
+    display: none;
+  }
+
+  #statusbar {
+    display: none;
+  }
+
+  header {
+    width: 100vw;
+    padding-right: 12.9%;
+    padding-left: 9%;
+    margin: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+
   #main-section::before {
     display: none;
+  }
+
+  .show-desktop ul {
+    padding-left: 0;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .show-desktop ul li {
+    margin-left: 9%;
   }
 
   #main-section .column {
     background-color: #fff;
     background-image: url(assets/header-shape-mobile.svg);
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -113,18 +152,19 @@ body {
     padding-right: 0;
     top: 0;
     left: 0;
-    width: 375px;
-    height: 718px;
+    width: 100vw;
+    height: 540px;
     z-index: -1;
   }
 
-  #main-section .column > * {
+  #main-section .column>* {
     margin-left: 1rem;
   }
 
   #main-section .column h1 {
     margin-top: 105px;
   }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -187,7 +227,7 @@ body {
     z-index: -1;
   }
 
-  #main-section .column > * {
+  #main-section .column>* {
     margin-right: 18%;
     margin-left: 18%;
   }
@@ -362,10 +402,25 @@ body {
   padding-right: 24px;
 }
 
-@media only screen and (min-width: 768px) {
-  #card-container {
-    grid-template: 496px 496px 496px 496px / 768px;
+@media only screen and (min-width: 376px) {
+  #cards-container {
+    width: 100vw;
   }
+
+  #cards-container .card {
+    display: flex;
+    width: 90vw;
+    height: 450px;
+    height: 50%;
+    column-gap: 12px;
+    margin-left: 6%;
+  }
+
+  #cards-container .card img {
+    width: 50%;
+    padding: 1rem;
+  }
+
 }
 
 .card {
@@ -392,7 +447,57 @@ body {
   content: url(assets/Snapshoot-Portfolio-3.png);
 }
 
+@media only screen and (min-width: 376px) {
+  #contact-section::before {
+    content: "";
+    position: absolute;
+    background-color: #6070ff;
+    background-image: url(assets/contact-form-background-shapes.svg);
+    background-size: contain;
+    background-position: right;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border-top-left-radius: 81px;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  #contact-section {
+    width: 100vw;
+    left: 0;
+    background-color: white;
+    border-radius: 0;
+  }
+
+  #contact-section .column {
+    width: 80vw;
+    margin-left: 12%;
+    margin-right: 0;
+  }
+
+  #contact-section .column div {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #contact-section p {
+    text-align: center;
+  }
+
+  #contact-section form ul li .contact-btn {
+    margin-left: 6rem;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  #card-container {
+    grid-template: 496px 496px 496px 496px / 768px;
+  }
+
   #card-img {
     content: url(assets/desktop-1-Snapshoot-Portfolio.jpg);
     width: 50%;
@@ -427,7 +532,7 @@ body {
     column-gap: 12px;
   }
 
-  .card-content > * {
+  .card-content>* {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -641,6 +746,10 @@ body {
   #skills {
     width: auto;
   }
+
+  #cards-container .card {
+    margin-left: 15%;
+  }
 }
 
 #contact-section::before {
@@ -663,7 +772,7 @@ body {
 #contact-section {
   position: relative;
   z-index: 9;
-  width: 375px;
+  width: 100vw;
   height: 779px;
   margin: 0 auto;
   background-color: #6070ff;
@@ -749,6 +858,13 @@ body {
   color: #b3bac5;
 }
 
+@media only screen and (min-width: 376px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   #contact-section::before {
     content: "";
@@ -763,7 +879,7 @@ body {
     top: 30px;
     left: 0;
     width: 100%;
-    height: 90.9%;
+    height: 100%;
     z-index: -1;
   }
 
@@ -775,6 +891,7 @@ body {
 
   #contact-section .column {
     width: 60vw;
+    margin-left: 21%;
   }
 
   #contact-section p {
