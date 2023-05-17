@@ -31,7 +31,8 @@
             <div id="toolbar">
                 <div id="logo"><a href="#">My logo</a></div>
                 <nav>
-                    <div id="menu" class="show-mobile"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+                    <div id="menu" class="show-mobile"><a href="#" onclick="openNav()"><i
+                                class="fa-solid fa-bars"></i></a></div>
                     <div class="show-desktop">
                         <ul>
                             <li><a href="#cards-container">Portfolio</a></li>
@@ -39,9 +40,19 @@
                             <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </div>
+
                 </nav>
             </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-thin fa-xmark"></i></a>
+                <div class="overlay-content">
+                    <a onclick="closeNav()" href="#cards-container">Porftolio</a>
+                    <a onclick="closeNav()" href="#about-me">About</a>
+                    <a onclick="closeNav()" href="#contact-section">Contact</a>
+                </div>
+            </div>
         </header>
+
 
         <section id="main-section">
             <div class="column">
@@ -329,7 +340,15 @@
             </div>
         </section>
     </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
 
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
