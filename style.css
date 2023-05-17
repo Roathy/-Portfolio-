@@ -157,7 +157,7 @@ body {
     z-index: -1;
   }
 
-  #main-section .column>* {
+  #main-section .column > * {
     margin-left: 1rem;
   }
 
@@ -226,7 +226,7 @@ body {
     z-index: -1;
   }
 
-  #main-section .column>* {
+  #main-section .column > * {
     margin-right: 18%;
     margin-left: 18%;
   }
@@ -530,7 +530,7 @@ body {
     column-gap: 12px;
   }
 
-  .card-content>* {
+  .card-content > * {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -924,7 +924,6 @@ body {
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: rgba(96, 112, 255, 0.84);
   backdrop-filter: blur(4.5px);
   background-color: hsla(234, 100%, 69%, 1);
   mix-blend-mode: multiply;
@@ -951,7 +950,6 @@ body {
   display: block;
   transition: 0.3s;
   font-weight: 600;
-  font-size: 32px;
   line-height: 44px;
 }
 
@@ -969,7 +967,7 @@ body {
 
 @media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 20px
+    font-size: 20px;
   }
 
   .overlay .closebtn {
