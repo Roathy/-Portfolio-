@@ -21,9 +21,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Hello---Microverse] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
-**[Hello---Microverse]** is a project to learn and practice the proper setup for repositories and projects
+**[Portfolio]** this is my portfolio project that have different section, About, Contacts, and some template of my works.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -32,23 +32,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li>HTML, CSS</li>
+    <li>HTML, CSS amd Javascript </li>
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li></li>
-  </ul>
-</details>
 
 ### Key Features <a name="key-features"></a>
 
