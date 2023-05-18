@@ -157,7 +157,7 @@ body {
     z-index: -1;
   }
 
-  #main-section .column > * {
+  #main-section .column>* {
     margin-left: 1rem;
   }
 
@@ -226,7 +226,7 @@ body {
     z-index: -1;
   }
 
-  #main-section .column > * {
+  #main-section .column>* {
     margin-right: 18%;
     margin-left: 18%;
   }
@@ -530,7 +530,7 @@ body {
     column-gap: 12px;
   }
 
-  .card-content > * {
+  .card-content>* {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
