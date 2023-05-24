@@ -13,7 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/mobile.css" />
+    <link rel="stylesheet" media='screen and (min-width: 600px)' href="CSS/tablet.css" />
     <script src="scripts.js"></script>
     <title>-Portfolio-</title>
 </head>
@@ -41,11 +42,11 @@
                             <li><a href="#contact-section">Contact</a></li>
                         </ul>
                     </div>
-
                 </nav>
             </div>
             <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-thin fa-xmark"></i></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fa fa-thin fa-xmark"></i></a>
                 <div class="overlay-content">
                     <a onclick="closeNav()" href="#cards-container">Porftolio</a>
                     <a onclick="closeNav()" href="#about-me">About</a>
@@ -54,9 +55,8 @@
             </div>
         </header>
 
-
         <section id="main-section">
-            <div class="column">
+            <div class="main-content">
                 <div class="show-mobile">
                     <h1>I'm Alexandra. Glad to see <br>you!</h1>
                 </div>
@@ -64,7 +64,8 @@
                     <h1>I'm Alexandra.<br> Glad to see you!</h1>
                 </div>
                 <div>
-                    <p>I’m a software developer! I can help you build a product , feature or website Look through some
+                    <p>I’m a software developer! I can help you build a product, feature or website Look through
+                        some
                         of my
                         work and<br class="show-mobile"> experience! If you like what you see and have a project you
                         need coded, don’t
@@ -89,9 +90,9 @@
 
         <section>
             <div id="cards-container">
-                <div class="card">
+                <div class="card odd">
                     <img id="card-img">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Tonic</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -126,9 +127,9 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card even">
                     <img id="card-img-1">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Multi-Post Stories</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -163,9 +164,9 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card odd">
                     <img id="card-img-2">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Tonic</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -200,9 +201,9 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card even">
                     <img id="card-img-3">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Multi-Post Stories</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -239,11 +240,12 @@
                 </div>
             </div>
         </section>
-        <section class="flex-container">
-            <div id="about-me">
-                <div class="column">
+        <section>
+            <div class="flex-container">
+                <div id="about-me">
                     <h1>About Myself</h1>
-                    <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through
+                    <p>Hello I’m a software developer! I can help you build a product , feature or website. Look
+                        through
                         some of
                         my work and experience! If you like what you see and have a project you need coded, don’t
                         hesitate
@@ -261,9 +263,7 @@
                     </div>
                     <a class="normal-button">Get my resume</a>
                 </div>
-            </div>
-            <div id="skill-list">
-                <div class="column">
+                <div id="skills-section">
                     <ul id="list-of-skills">
                         <li>
                             <div id="languages">
@@ -309,9 +309,8 @@
                 </div>
             </div>
         </section>
-
-        <section id="contact-section">
-            <div class="column">
+        <section>
+            <div id="contact-section">
                 <div>
                     <h2>Contact me</h2>
                     <p>If you have an application you are interested in developing, a feature that you need built or
