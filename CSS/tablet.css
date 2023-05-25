@@ -1,10 +1,13 @@
 /* auxiliar classes */
 .container {
-  background: linear-gradient(to bottom,
-      #E5E5E5 0%,
-      #E5E5E5 72%,
+  background:
+    linear-gradient(
+      to bottom,
+      #e5e5e5 0%,
+      #e5e5e5 72%,
       #fff 72%,
-      #fff 100%);
+      #fff 100%
+    );
 }
 
 #menu.show-mobile {
