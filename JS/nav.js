@@ -1,7 +1,6 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
-
 /* control visibility of menu */
 navToggle.addEventListener('click', () => {
   const visibility = primaryNav.getAttribute('data-visible');
@@ -18,6 +17,10 @@ navToggle.addEventListener('click', () => {
 });
 
 /* close menu when someone clicks on an element inside the overlay */
+primaryNav.childNodes.forEach((element) => {
+  element.addEventListener("click", closeNav);
+})
+
 function closeNav() {
   primaryNav.setAttribute('data-visible', false);
   navToggle.setAttribute('aria-expanded', false);
