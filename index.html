@@ -15,44 +15,34 @@
         rel="stylesheet">
     <link rel="stylesheet" href="CSS/mobile.css" />
     <link rel="stylesheet" media='screen and (min-width: 600px)' href="CSS/tablet.css" />
-    <script src="scripts.js"></script>
     <title>-Portfolio-</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <div id="statusbar">
-                <div>9:42</div>
-                <div id="status-icons">
-                    <i class="fa-solid fa-signal"></i>
-                    <i class="fa-solid fa-wifi"></i>
-                    <i class="fa-solid fa-battery-full"></i>
-                </div>
+        <header class="primary-header">
+            <div>
+                <a id="logo" href="#">My logo</a>
             </div>
-            <div id="toolbar">
-                <div id="logo"><a href="#">My logo</a></div>
-                <nav>
-                    <div id="menu" class="show-mobile"><a href="#" onclick="openNav()"><i
-                                class="fa-solid fa-bars"></i></a></div>
-                    <div class="show-desktop">
-                        <ul>
-                            <li><a href="#cards-container">Portfolio</a></li>
-                            <li><a href="#about-me">About</a></li>
-                            <li><a href="#contact-section">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
-                        class="fa fa-thin fa-xmark"></i></a>
-                <div class="overlay-content">
-                    <a onclick="closeNav()" href="#cards-container">Porftolio</a>
-                    <a onclick="closeNav()" href="#about-me">About</a>
-                    <a onclick="closeNav()" href="#contact-section">Contact</a>
-                </div>
-            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                    <li class="active">
+                        <a aria-hidden="true" href="#cards-container">Portfolio</a>
+                    </li>
+                    <li>
+                        <a aria-hidden="true" href="#about-me">About</a>
+                    </li>
+                    <li>
+                        <a aria-hidden="true" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <section id="main-section">
@@ -340,6 +330,8 @@
             </div>
         </section>
     </div>
+
+    <script src="JS/nav.js"></script>
 </body>
 
 </html>
