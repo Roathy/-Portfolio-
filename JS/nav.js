@@ -17,12 +17,12 @@ navToggle.addEventListener('click', () => {
 });
 
 /* close menu when someone clicks on an element inside the overlay */
-primaryNav.childNodes.forEach((element) => {
-  element.addEventListener("click", closeNav);
-})
-
 function closeNav() {
   primaryNav.setAttribute('data-visible', false);
   navToggle.setAttribute('aria-expanded', false);
   navToggle.firstElementChild.classList = 'fa fa-solid fa-bars';
 }
+
+primaryNav.childNodes.forEach((element) => {
+  element.addEventListener('click', closeNav);
+});
