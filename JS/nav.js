@@ -1,6 +1,8 @@
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
+
+/* control visibility of menu */
 navToggle.addEventListener('click', () => {
   const visibility = primaryNav.getAttribute('data-visible');
 
@@ -14,3 +16,10 @@ navToggle.addEventListener('click', () => {
     navToggle.firstElementChild.classList = 'fa fa-solid fa-bars';
   }
 });
+
+/* close menu when someone clicks on an element inside the overlay */
+function closeNav() {
+  primaryNav.setAttribute('data-visible', false);
+  navToggle.setAttribute('aria-expanded', false);
+  navToggle.firstElementChild.classList = 'fa fa-solid fa-bars';
+}
