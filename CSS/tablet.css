@@ -2,6 +2,10 @@
   display: none;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 .show-desktop {
   display: block;
   padding-right: 21px;
@@ -29,7 +33,6 @@
 #main-section .main-content .show-mobile {
   display: none;
 }
-
 
 .main-content .show-desktop {
   width: 70%;
