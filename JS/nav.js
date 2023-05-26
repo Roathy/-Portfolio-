@@ -26,3 +26,20 @@ function closeNav() {
 primaryNav.childNodes.forEach((element) => {
   element.addEventListener('click', closeNav);
 });
+
+
+/* Preserve data in the browser */
+ const nameInput = contactForm.querySelector('#name');
+const emailInput = contactForm.querySelector('#email');
+const textInput = contactForm.querySelector('#message');
+function storage() {
+
+  const data = {
+     name: nameInput.value,
+    email: emailInput.value,
+    text: textInput.value,
+  };
+
+  localStorage.setItem('contactFormData', JSON.stringify(saveData));
+}
+    
