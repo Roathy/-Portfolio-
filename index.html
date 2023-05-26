@@ -13,38 +13,39 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/mobile.css" />
+    <link rel="stylesheet" media='screen and (min-width: 600px)' href="CSS/tablet.css" />
     <title>-Portfolio-</title>
 </head>
 
 <body>
     <div class="container">
-        <header>
-            <div id="statusbar">
-                <div>9:42</div>
-                <div id="status-icons">
-                    <i class="fa-solid fa-signal"></i>
-                    <i class="fa-solid fa-wifi"></i>
-                    <i class="fa-solid fa-battery-full"></i>
-                </div>
+        <header class="primary-header">
+            <div>
+                <a id="logo" href="#">My logo</a>
             </div>
-            <div id="toolbar">
-                <div id="logo"><a href="#">My logo</a></div>
-                <nav>
-                    <div id="menu" class="show-mobile"><a href="#"><i class="fa-solid fa-bars"></i></a></div>
-                    <div class="show-desktop">
-                        <ul>
-                            <li><a href="#cards-container">Portfolio</a></li>
-                            <li><a href="#about-me">About</a></li>
-                            <li><a href="#contact-section">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                    <li class="active">
+                        <a aria-hidden="true" href="#cards-container">Portfolio</a>
+                    </li>
+                    <li>
+                        <a aria-hidden="true" href="#about-me">About</a>
+                    </li>
+                    <li>
+                        <a aria-hidden="true" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <section id="main-section">
-            <div class="column">
+            <div class="main-content">
                 <div class="show-mobile">
                     <h1>I'm Alexandra. Glad to see <br>you!</h1>
                 </div>
@@ -52,7 +53,8 @@
                     <h1>I'm Alexandra.<br> Glad to see you!</h1>
                 </div>
                 <div>
-                    <p>I’m a software developer! I can help you build a product , feature or website Look through some
+                    <p>I’m a software developer! I can help you build a product, feature or website Look through
+                        some
                         of my
                         work and<br class="show-mobile"> experience! If you like what you see and have a project you
                         need coded, don’t
@@ -77,9 +79,9 @@
 
         <section>
             <div id="cards-container">
-                <div class="card">
+                <div class="card odd">
                     <img id="card-img">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Tonic</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -114,9 +116,9 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card even">
                     <img id="card-img-1">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Multi-Post Stories</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -151,9 +153,9 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card odd">
                     <img id="card-img-2">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Tonic</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -188,9 +190,9 @@
                     </div>
 
                 </div>
-                <div class="card">
+                <div class="card even">
                     <img id="card-img-3">
-                    <div class="card-content">
+                    <div class="card-content ">
                         <h2 class="card-title">Multi-Post Stories</h2>
                         <div class="card-info row-container">
                             <h3>CANOPY</h3>
@@ -227,11 +229,12 @@
                 </div>
             </div>
         </section>
-        <section class="flex-container">
-            <div id="about-me">
-                <div class="column">
+        <section>
+            <div class="flex-container">
+                <div id="about-me">
                     <h1>About Myself</h1>
-                    <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through
+                    <p>Hello I’m a software developer! I can help you build a product , feature or website. Look
+                        through
                         some of
                         my work and experience! If you like what you see and have a project you need coded, don’t
                         hesitate
@@ -249,9 +252,7 @@
                     </div>
                     <a class="normal-button">Get my resume</a>
                 </div>
-            </div>
-            <div id="skill-list">
-                <div class="column">
+                <div id="skills-section">
                     <ul id="list-of-skills">
                         <li>
                             <div id="languages">
@@ -297,39 +298,37 @@
                 </div>
             </div>
         </section>
-
         <section id="contact-section">
-            <div class="column">
-                <div>
-                    <h2>Contact me</h2>
-                    <p>If you have an application you are interested in developing, a feature that you need built or
-                        a
-                        project that needs coding.
-                        I’d love to help with it!</p>
-                </div>
-                <form action="https://formspree.io/f/xyyaojgk" method="post">
-                    <ul>
-                        <li>
-                            <input type="text" class="form-input" name="name" id="name" placeholder="Full Name"
-                                maxlength="30" required />
-                        </li>
-                        <li>
-                            <input type="email" class="form-input" name="email" id="email" placeholder="Email address"
-                                required />
-                        </li>
-                        <li>
-                            <textarea placeholder="Hey, I'd like to connect to..." maxlength="500" name="message"
-                                rows="10" cols="30" required></textarea>
-                        </li>
-                        <li>
-                            <input type="submit" class="contact-btn" value="Get in touch" />
-                        </li>
-                    </ul>
-                </form>
+            <div>
+                <h2>Contact me</h2>
+                <p>If you have an application you are interested in developing, a feature that you need built or
+                    a
+                    project that needs coding.
+                    I’d love to help with it!</p>
             </div>
+            <form action="https://formspree.io/f/xyyaojgk" method="post">
+                <ul>
+                    <li>
+                        <input type="text" class="form-input" name="name" id="name" placeholder="Full Name"
+                            maxlength="30" required />
+                    </li>
+                    <li>
+                        <input type="email" class="form-input" name="email" id="email" placeholder="Email address"
+                            required />
+                    </li>
+                    <li>
+                        <textarea placeholder="Hey, I'd like to connect to..." maxlength="500" name="message" rows="10"
+                            cols="30" required></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" class="contact-btn" value="Get in touch" />
+                    </li>
+                </ul>
+            </form>
         </section>
     </div>
 
+    <script src="JS/nav.js"></script>
 </body>
 
 </html>
