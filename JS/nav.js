@@ -26,3 +26,16 @@ function closeNav() {
 primaryNav.childNodes.forEach((element) => {
   element.addEventListener('click', closeNav);
 });
+
+/*  Email Validation */
+function validate(event) {
+  event.preventDefault(); // prevent  the form from submitting 
+  
+  const input = document.getElementById('email');
+  
+  const lowerCase = emailInput.value.toLowerCase();
+  input.value = lowerCase; 
+  event.target.submit();
+}
+
+
