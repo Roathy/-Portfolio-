@@ -132,6 +132,10 @@
   content: url(../assets/desktop-4-Snapshoot-Portfolio.png);
 }
 
+#card-img-5 {
+  content: url(../assets/desktop-4-Snapshoot-Portfolio.png);
+}
+
 .flex-container {
   flex-direction: row;
   padding: 3rem;
