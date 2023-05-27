@@ -1,43 +1,43 @@
-import cardsData from "../DATA/cards-data.js";
-import openPopup from "./pop-up-window.js";
+import cardsData from '../DATA/cards-data.js';
+import openPopup from './pop-up-window.js';
 
 // circle icon
-const circleIcon = document.createElement("i");
-circleIcon.classList.add("fa");
-circleIcon.classList.add("fa-solid");
-circleIcon.classList.add("fa-circle");
+const circleIcon = document.createElement('i');
+circleIcon.classList.add('fa');
+circleIcon.classList.add('fa-solid');
+circleIcon.classList.add('fa-circle');
 
 // get cards container element
-const cardsContainer = document.getElementById("cards-container");
+const cardsContainer = document.getElementById('cards-container');
 
-//looping through array of cards to create the html of each one
+// looping through array of cards to create the html of each one
 cardsData.forEach((card, index) => {
-  //create html elements
-  const cardElement = document.createElement("div");
+  // create html elements
+  const cardElement = document.createElement('div');
   cardElement.id = `card-${index + 1}`;
-  cardElement.classList.add("card");
-  cardElement.classList.add(cardElement.id % 2 === 0 ? "even" : "odd");
+  cardElement.classList.add('card');
+  cardElement.classList.add(cardElement.id % 2 === 0 ? 'even' : 'odd');
 
-  const cardContent = document.createElement("div");
-  cardContent.classList.add("card-content");
+  const cardContent = document.createElement('div');
+  cardContent.classList.add('card-content');
 
-  const imageElement = document.createElement("img");
+  const imageElement = document.createElement('img');
   imageElement.id = `card-img-${index + 1}`;
 
-  const titleElement = document.createElement("h2");
+  const titleElement = document.createElement('h2');
   titleElement.textContent = card.title;
-  titleElement.classList.add("card-title");
+  titleElement.classList.add('card-title');
 
-  const cardHeader = document.createElement("div");
-  cardHeader.classList.add("card-info");
-  cardHeader.classList.add("row-container");
+  const cardHeader = document.createElement('div');
+  cardHeader.classList.add('card-info');
+  cardHeader.classList.add('row-container');
   card.topics.forEach((topic, index) => {
     if (index === 0) {
-      const h3Element = document.createElement("h3");
+      const h3Element = document.createElement('h3');
       h3Element.textContent = topic;
       cardHeader.appendChild(h3Element);
     } else if (index === 1) {
-      const pElement = document.createElement("p");
+      const pElement = document.createElement('p');
       pElement.textContent = topic;
       const iconOne = circleIcon.cloneNode(true);
       const iconTwo = circleIcon.cloneNode(true);
@@ -45,26 +45,26 @@ cardsData.forEach((card, index) => {
       cardHeader.appendChild(pElement);
       cardHeader.appendChild(iconTwo);
     } else if (index === 2) {
-      const pElement = document.createElement("p");
+      const pElement = document.createElement('p');
       pElement.textContent = topic;
       cardHeader.appendChild(pElement);
     }
   });
 
-  const descriptionElement = document.createElement("p");
+  const descriptionElement = document.createElement('p');
   descriptionElement.innerText = card.text;
-  descriptionElement.classList.add("card-description");
+  descriptionElement.classList.add('card-description');
 
-  const techsContainer = document.createElement("div");
-  techsContainer.classList.add("card-tech");
-  const techsElement = document.createElement("ul");
-  techsElement.classList.add("list-categories");
-  techsElement.classList.add("row-container");
+  const techsContainer = document.createElement('div');
+  techsContainer.classList.add('card-tech');
+  const techsElement = document.createElement('ul');
+  techsElement.classList.add('list-categories');
+  techsElement.classList.add('row-container');
   card.technologies.forEach((tech) => {
-    const techElement = document.createElement("li");
-    const techBackground = document.createElement("div");
-    techBackground.classList.add("box-background");
-    const techText = document.createElement("p");
+    const techElement = document.createElement('li');
+    const techBackground = document.createElement('div');
+    techBackground.classList.add('box-background');
+    const techText = document.createElement('p');
     techText.innerText = tech;
     techBackground.appendChild(techText);
     techElement.appendChild(techBackground);
@@ -72,21 +72,21 @@ cardsData.forEach((card, index) => {
   });
 
   // create buttons container
-  const buttonsElement = document.createElement("div");
-  buttonsElement.classList.add("buttons");
+  const buttonsElement = document.createElement('div');
+  buttonsElement.classList.add('buttons');
 
   // create each individual button
   card.buttons.forEach((button, index) => {
-    const buttonElement = document.createElement("a");
+    const buttonElement = document.createElement('a');
     buttonElement.href = button.url;
     buttonElement.textContent = button.text;
-    buttonElement.classList.add("button");
-    buttonElement.classList.add("normal-button");
+    buttonElement.classList.add('button');
+    buttonElement.classList.add('normal-button');
 
     if (index === 0) {
-      buttonElement.addEventListener("click", (event) => {
+      buttonElement.addEventListener('click', (event) => {
         event.preventDefault();
-        const parentContainerID = event.target.closest(".card").id;
+        const parentContainerID = event.target.closest('.card').id;
         openPopup(parentContainerID);
       });
     }
