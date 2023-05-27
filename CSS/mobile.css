@@ -6,7 +6,7 @@
 
 * {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -335,7 +335,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: center;
   }
 
   .card img {
@@ -343,19 +342,19 @@ body {
   }
 }
 
-#card-img {
+#card-img-1 {
   content: url(../assets/Snapshoot-Portfolio.png);
 }
 
-#card-img-1 {
+#card-img-2 {
   content: url(../assets/Snapshoot-Portfolio-1.png);
 }
 
-#card-img-2 {
+#card-img-3 {
   content: url(../assets/Snapshoot-Portfolio-2.png);
 }
 
-#card-img-3 {
+#card-img-4 {
   content: url(../assets/Snapshoot-Portfolio-3.png);
 }
 
@@ -668,4 +667,39 @@ body {
   #contact-section form .contact-btn {
     display: inline-block;
   }
+}
+
+/* popup window */
+#popup-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  padding-top: 2.4rem;
+  z-index: 9999;
+  background-color: rgba(111, 111, 111, 0.7);
+  backdrop-filter: blur(9px);
+}
+
+#popup-window i.fa-xmark {
+  position: fixed;
+  top: 3.3rem;
+  right: 2.07rem;
+  font-size: 21px;
+  color: grey;
+}
+
+#popup-window .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#popup-window .buttons a {
+  width: fit-content;
+  font-size: 15px;
 }

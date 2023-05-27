@@ -91,6 +91,29 @@
 
 .card .card-content {
   width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-content {
+    gap: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 2.1rem;
+  }
+
+  .card-content {
+    gap: 1.2rem;
+  }
 }
 
 #card-img {
@@ -106,6 +129,10 @@
 }
 
 #card-img-3 {
+  content: url(../assets/desktop-4-Snapshoot-Portfolio.png);
+}
+
+#card-img-5 {
   content: url(../assets/desktop-4-Snapshoot-Portfolio.png);
 }
 
@@ -140,4 +167,106 @@
   width: 45%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* popup window */
+#popup-window {
+  padding: 3rem 4.5rem;
+  background-color: rgba(193, 199, 208, 0.7);
+  backdrop-filter: blur(9px);
+}
+
+#popup-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#popup-window i.fa-xmark {
+  position: fixed;
+  top: 4.2rem;
+  right: 6rem;
+  font-size: 21px;
+  color: grey;
+}
+
+#popup-window .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#popup-window .buttons a {
+  width: fit-content;
+  font-size: 15px;
+}
+
+#popup-window .card {
+  gap: 0;
+}
+
+#popup-window .card img {
+  width: 100%;
+  height: 50%;
+}
+
+#popup-window .card .card-content {
+  width: 100%;
+  gap: 0;
+}
+
+@media screen and (min-width: 900px) {
+  #popup-container {
+    padding: 0.9rem;
+  }
+
+  #popup-window .card img {
+    height: 100%;
+  }
+
+  #popup-window .card-details {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .card-details .techs-buttons {
+    width: 30%;
+    padding-top: 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .row-container {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .card-details .buttons {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  #popup-window {
+    padding: 1rem 2rem;
+    gap: 0;
+  }
+
+  #popup-window .card-details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #popup-window * {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #popup-window img {
+    display: none;
+  }
 }
