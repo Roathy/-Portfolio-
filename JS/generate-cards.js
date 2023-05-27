@@ -1,6 +1,6 @@
 import cardsData from "../DATA/cards-data.js";
+import openPopup from "./pop-up-window.js";
 
-console.log(cardsData);
 // circle icon
 const circleIcon = document.createElement("i");
 circleIcon.classList.add("fa");
@@ -14,7 +14,7 @@ const cardsContainer = document.getElementById("cards-container");
 cardsData.forEach((card, index) => {
   //create html elements
   const cardElement = document.createElement("div");
-  cardElement.id = index + 1;
+  cardElement.id = `card-${index + 1}`;
   cardElement.classList.add("card");
   cardElement.classList.add(cardElement.id % 2 === 0 ? "even" : "odd");
 
@@ -84,8 +84,10 @@ cardsData.forEach((card, index) => {
     buttonElement.classList.add("normal-button");
 
     if (index === 0) {
-      buttonElement.addEventListener("click", () => {
-        openPopup(card.details);
+      buttonElement.addEventListener("click", (event) => {
+        event.preventDefault();
+        const parentContainerID = event.target.closest(".card").id;
+        openPopup(parentContainerID);
       });
     }
     buttonsElement.appendChild(buttonElement);
