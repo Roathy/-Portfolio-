@@ -1,13 +1,12 @@
 /* auxiliar classes */
 .container {
-  background:
-    linear-gradient(
-      to bottom,
-      #e5e5e5 0%,
-      #e5e5e5 72%,
-      #fff 72%,
-      #fff 100%
-    );
+  background: linear-gradient(
+    to bottom,
+    #e5e5e5 0%,
+    #e5e5e5 72%,
+    #fff 72%,
+    #fff 100%
+  );
 }
 
 #menu.show-mobile {
@@ -91,6 +90,28 @@
 
 .card .card-content {
   width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-content {
+    gap: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 2.1rem;
+  }
+  .card-content {
+    gap: 1.2rem;
+  }
 }
 
 #card-img {
