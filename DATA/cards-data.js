@@ -8,7 +8,7 @@ const cardsData = [
       {
         text: "See project",
         icon: "icon",
-        url: "url",
+        url: "#",
       },
     ],
   },
@@ -21,7 +21,7 @@ const cardsData = [
       {
         text: "See project",
         icon: "icon",
-        url: "url",
+        url: "#",
       },
     ],
   },
@@ -34,7 +34,7 @@ const cardsData = [
       {
         text: "See project",
         icon: "icon",
-        url: "url",
+        url: "#",
       },
     ],
   },
@@ -47,7 +47,7 @@ const cardsData = [
       {
         text: "See project",
         icon: "icon",
-        url: "url",
+        url: "#",
       },
     ],
   },
