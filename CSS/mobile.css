@@ -33,6 +33,7 @@ body {
   display: flex;
   gap: var(--gap, 1rem);
 }
+
 .show-mobile {
   display: block;
 }
@@ -42,13 +43,14 @@ body {
 }
 
 .container {
-  background: linear-gradient(
-    to bottom,
-    #e5e5e5 0%,
-    #e5e5e5 80%,
-    #fff 80%,
-    #fff 100%
-  );
+  background:
+    linear-gradient(
+      to bottom,
+      #e5e5e5 0%,
+      #e5e5e5 80%,
+      #fff 80%,
+      #fff 100%
+    );
 }
 
 .clear-both {
@@ -689,16 +691,15 @@ body {
   color: grey;
 }
 
-#popup-window .buttons {  
+#popup-window .buttons {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
   justify-content: center;
-} 
+}
 
-#popup-window .buttons a {  
+#popup-window .buttons a {
   width: fit-content;
   font-size: 15px;
 }
-
